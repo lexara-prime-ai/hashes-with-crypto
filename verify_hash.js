@@ -2,11 +2,11 @@ const log = console.log;
 const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
-let filePath = path.join(__dirname, 'files', 'hash.txt');
+let filePath = path.join(__dirname, 'logs', 'log.txt');
 fs.readFile(filePath, 'utf-8', (err, data) => {
     if(!fs.existsSync(filePath)) {
         log('File Not Found...');
-        throw err;
+        console.error(`${err.name}\t${err.message}`);
     } else {
         const readline = require('readline').createInterface({
             input: process.stdin,

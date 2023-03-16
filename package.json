@@ -1,11 +1,12 @@
 {
   "name": "nodecrypto",
   "version": "1.0.0",
-  "description": "practice env for crypto module",
+  "description": "Create and verify hashes",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "verify": "node verify_hash.js"
   },
-  "author": "",
+  "author": "Irfan Ghat",
   "license": "ISC"
 }
